@@ -1,3 +1,8 @@
+#!/usr/bin/env python
+# PYTHON_ARGCOMPLETE_OK
+
+import argparse
+import argcomplete
 import subprocess
 
 
@@ -15,5 +20,13 @@ def make_call(contact_name):
         raise RuntimeError("Contact {} was not found".format(contact_name))
     subprocess.call("termux-telephony-call {}".format(phone_number), shell=True)
 
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-c", "--contact_name", choices=get_contact_list().keys())
+    argcomplete.autocomplete(parser)
+    args = parser.parse_args()
+    make_call(args.contact_name)
+
+
 if __name__ == "__main__":
-    pass
+    main()
