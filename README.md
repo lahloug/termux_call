@@ -6,8 +6,8 @@ Requirements
 
 Within your android phone:
 
-* Install F-droid directly on their website: https://www.f-droid.org/
-* Activate the archive repository option on the know repositories menu
+* Install F-droid directly from their website: https://www.f-droid.org/
+* Activate the archive repository option on the known repositories menu
 * Download the latest version of termux
 * Download termux-api (latest version which gives access to both sms and call api)
 
