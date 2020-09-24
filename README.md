@@ -13,6 +13,7 @@ Within your android phone:
 
 Once you open the termux application, run on the terminal:
 
+```
   $ pkg update
   $ pkg upgrade
   $ pkg install termux-api
@@ -20,9 +21,12 @@ Once you open the termux application, run on the terminal:
   $ cd termux_call
   $ pip install -e .
   $ echo 'eval "$(register-python-argcomplete termux-call)"' >> ~/.bashrc
+```
 
 Now, you can call anyone on your contact book from your terminal!
 
+```
  $ termux-call person_name
+```
 
 Beware, phone charges incur as usual.
