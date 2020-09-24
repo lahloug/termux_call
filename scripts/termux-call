@@ -8,7 +8,7 @@ from termux_call.lib import make_call, get_contact_list
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-c", "--contact_name", choices=get_contact_list().keys())
+    parser.add_argument("contact_name", choices=get_contact_list().keys())
     argcomplete.autocomplete(parser)
     args = parser.parse_args()
     make_call(args.contact_name)
