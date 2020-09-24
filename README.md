@@ -8,8 +8,8 @@ Within your android phone:
 
 * Install F-droid directly from their website: https://www.f-droid.org/
 * Activate the archive repository option on the known repositories menu
-* Download the latest version of termux
-* Download termux-api (latest version which gives access to both sms and call api)
+* Download the latest version of termux from F-droid
+* Download termux-api version 0.31 from F-droid (latest version which gives access to both sms and call api)
 
 Once you open the termux application, run on the terminal:
 
